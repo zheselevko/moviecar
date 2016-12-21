@@ -1,0 +1,42 @@
+---------- Date: 2016-12-21 17:35:39 ~ IP : 91.242.194.65 ----------
+REQUEST URI : /admin/index.php?route=extension/modification&token=8251ba56c6d3b94d31aba4b179fd7c8f
+MOD DETAILS:
+   modFile   : /home/zheselev/webformyself.co.ua/car/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-12-21 18:14:55 ~ IP : 91.242.194.65 ----------
+REQUEST URI : /admin/index.php?route=extension/modification/refresh&token=8251ba56c6d3b94d31aba4b179fd7c8f
+MOD DETAILS:
+   modFile   : /home/zheselev/webformyself.co.ua/car/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2016-12-21 18:29:10 ~ IP : 91.242.194.65 ----------
+REQUEST URI : /admin/index.php?route=catalog/commission&token=8251ba56c6d3b94d31aba4b179fd7c8f
+MOD DETAILS:
+   modFile   : /home/zheselev/webformyself.co.ua/car/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

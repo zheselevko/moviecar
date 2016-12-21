@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Mega Filter PRO PLUS</name>
+	<code>mega_filter_pro_plus</code>
+	<version>v1.2.2 by OpenCart/ocStore 1.5.4 - 2.2.0.0</version>
+	<author>Developer - marsilea15@gmail.com [PL] | OCMod wrote Solunski.Di [RU]</author>
+	<link>http://www.opencart.com</link>
+	
+	<!-- OCMod wrote Solunski.Di [RU] by OpenCart/ocStore 1.5.4 - 2.2.0.0 | 08.03.2016 -->
+	
+	<!-- PRODUCT -->
+	<file path="admin/model/catalog/product.php">
+		<operation>
+			<search><![CDATA[$this->cache->delete('product');]]></search>
+			<add position="before"><![CDATA[
+				if( $this->config->get( 'mfilter_plus_version' ) && in_array( __FUNCTION__, array( 'addProduct', 'editProduct' ) ) ) {
+					require_once DIR_SYSTEM . 'library/mfilter_plus.php';
+					
+					Mfilter_Plus::getInstance( $this )->updateProduct( $product_id );
+				}
+			]]></add>
+		</operation>
+	</file>
+	
+	<!-- FILTER -->
+	<file path="admin/model/catalog/filter.php">
+		<operation error="skip">
+			<search><![CDATA[function deleteFilter($filter_group_id) {]]></search>
+			<add position="after"><![CDATA[
+				if( $this->config->get( 'mfilter_plus_version' ) ) {
+					require_once DIR_SYSTEM . 'library/mfilter_plus.php';
+					
+					Mfilter_Plus::getInstance( $this )->deleteFilter( $filter_group_id );
+				}
+			]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search><![CDATA[function editFilter($filter_group_id, $data) {]]></search>
+			<add position="after"><![CDATA[
+				if( $this->config->get( 'mfilter_plus_version' ) ) {
+					$beforeEditFilter = $this->db->query( "SELECT * FROM `" . DB_PREFIX . "filter` WHERE `filter_group_id` = " . (int) $filter_group_id )->rows;
+				}
+			]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search><![CDATA[if (isset($data['filter'])) {]]></search>
+			<add position="before"><![CDATA[
+				if( $this->config->get( 'mfilter_plus_version' ) && in_array( __FUNCTION__, array( 'editFilter' ) ) ) {
+					require_once DIR_SYSTEM . 'library/mfilter_plus.php';
+					
+					Mfilter_Plus::getInstance( $this )->editFilter( $data, $beforeEditFilter );
+				}
+			]]></add>
+		</operation>
+	</file>
+	
+</modification>

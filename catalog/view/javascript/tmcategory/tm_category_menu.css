@@ -1,0 +1,46 @@
+/**************TM BOX CATEGORY***********************/
+aside .box.category {
+	width:100%;
+	float:none;
+	padding:0
+}
+.box.category {
+	position:relative;
+	overflow:visible
+}
+.box.category .category_menu>li:active>ul,
+.box.category .category_menu>li:hover>ul {
+	opacity:1;
+	visibility:visible;
+}
+.common-home .box.category .category_menu>li>ul {
+	/*left:100%*/
+}
+.category_menu>li>ul {
+	opacity:0;
+	visibility:hidden;
+	position:absolute;
+	left:107%;
+	top:0;
+	padding:40px;
+	width:885px;
+	z-index:97;
+	display:block;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+}
+.box.category .category_menu>li>ul>li ul{
+	list-style:none;
+	padding:0;
+}
+.box.category .category_menu>li>ul>li li {
+	line-height:24px;
+}
+.box.category .category_menu>li>ul>li {
+	display:block;
+	float:left;
+	list-style-type:none;
+	width:25%
+}

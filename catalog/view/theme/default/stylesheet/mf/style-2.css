@@ -1,0 +1,30 @@
+
+			.mfilter-counter {
+				background: #428bca;
+				color: #ffffff;
+			}
+			.mfilter-counter:after {
+				border-right-color: #428bca;
+			}
+		
+				.mfilter-search #mfilter-opts-search_button {
+					background-color: #428bca;
+				}
+			
+
+			.mfilter-box-1 .mfilter-counter {
+				background: #428bca;
+				color: #ffffff;
+			}
+			.mfilter-box-1 .mfilter-counter:after {
+				border-right-color: #428bca;
+			}
+		@media (max-width: 980px) {	
+    #left_col, #right_col, #column-left, #column-right, #column_left, #column_right, #leftColumn, #rightColumn {
+        display: none !important;
+    }
+}
+				.mfilter-box-1 .mfilter-search #mfilter-opts-search_button {
+					background-color: #428bca;
+				}
+			

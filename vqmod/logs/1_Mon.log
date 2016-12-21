@@ -1,0 +1,14 @@
+---------- Date: 2016-11-21 23:23:07 ~ IP : 66.249.93.36 ----------
+REQUEST URI : /admin/index.php?route=extension/modification&token=04ab75803009ecdf0fb03193cb19f784
+MOD DETAILS:
+   modFile   : /home/zheselev/webformyself.co.ua/car/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
